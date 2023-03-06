@@ -1,0 +1,102 @@
+@charset "UTF-8";
+    @font-face {
+        font-family: 'Freight';
+        src: url('../font/Freight\ Sans\ Black.otf');
+        src: url('../font/salsbury.ttf');
+    }
+:root {
+    --fonte-titulo: 'Freight', cursive;
+    --fonte-conteudo: 'Freight', cursive;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    min-height: 100vh;
+}
+header {
+    background-color: black;
+    color: white;
+    min-width: 150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 10vw;
+    
+}
+article {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.artigo {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    max-width: 100%; 
+}
+
+.artigo > p {
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonte-conteudo);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 400px;
+    line-height: 2em;
+}
+.artigoclasseimg {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+}
+article#artigoimg1 {
+    color: white;
+    background: rgb(14, 14, 14) url('../image/background001.jpg') center right no-repeat fixed;
+    background-size: cover;  
+}
+.artigoclasseimg > p {
+    background-color: rgba(2, 2, 2, 0.288);
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonte-conteudo);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-width: 300px;
+    max-width: 400px;
+    line-height: 2em;
+}
+
+article#artigoimg2 {
+    color: white;
+    background: rgb(14, 14, 14) url('../image/background002.jpg') center right no-repeat fixed;
+    background-size: cover; 
+}
+.artigoclasseimg p {
+    background-color: rgba(2, 2, 2, 0.288);
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonte-conteudo);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 400px;
+    line-height: 2em;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+a {
+    color: rgb(190, 189, 189);
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
